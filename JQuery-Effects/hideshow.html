@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery- Hide -Show -Play</title>
+	<link rel="stylesheet" type="text/css" href="hideshow.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<style type="text/css">
+		.login, .register{
+			background-color: #0099ff;
+			padding: 10px;
+		}
+	</style>
+
+</head>
+<body>
+	<div class="body">
+	<h2>Login details</h2>
+	<button class="show-L">Show me</button>
+	<button class="Toggle-L">Toggle me</button><br><br>
+
+	<div class="login">
+		<button class="hide">Hide me</button>
+		<p>
+			Name: Saikrishna<br>
+			Email: krishnasvr9393@gmail.com<br>
+			password: ********
+		</p>
+	</div>
+
+	<h3>Required details:</h3><br>
+	<button class="show-R">Show me</button>
+	<button class="Toggle-R">Toggle me</button><br><br>
+	<div class=register>
+		<button class="hide">Hide me</button>
+		<p>
+			Name,<br>
+			Email,<br>
+			Password,<br>
+			Phone
+		</p>
+	</div>
+	</div>
+	<script>
+		$(document).ready(function(){
+			//Login details part
+			//:SYNTAX:
+			//$(selector).anyfunction(speed,opacity,callback);
+
+			$('.login .hide').click(function(){
+				// The optional speed parameter specifies the speed of the hiding/showing, and can take the following values: "slow", "fast", or milliseconds.
+				$('.login').hide('slow');
+			})
+			$('.show-L').click(function(){
+				$('.login').show('slow');
+			})
+			//toggle
+			$('.Toggle-L').click(function(){
+				$('.login').toggle(1500);
+			})
+
+			//Register part
+			$('.register .hide').click(function(){
+				$('.register').hide(2500);
+			})
+			$('.show-R').click(function(){
+				$('.register').show(2000);
+			})
+			//toggle
+			$('.Toggle-R').click(function(){
+				$('.register').toggle(1500);
+			})
+		})
+	</script>
+</body>
+</html>

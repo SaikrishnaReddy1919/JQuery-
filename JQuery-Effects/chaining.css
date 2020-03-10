@@ -1,0 +1,25 @@
+.body{
+	margin:auto;
+		width: 500px;
+	border: solid blue;
+	padding: 10px;
+	/*display: flex;*/
+	align-items: center;
+	justify-content: center;
+}
+h3{
+	color: blue;
+}
+button{
+	background-color: green;
+	padding :10px;
+	border: none;
+	color: white;
+
+}
+button:hover{
+	background-color: white;
+	color: black;
+	border: blue 1px solid;
+	cursor: pointer;
+}

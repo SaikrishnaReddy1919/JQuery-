@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="slide.css">
+</head>
+<body>
+
+<div class="body">
+	<h1>JQuery-Slide-Demo</h1>
+	<div id="flip">Click here to slide the panel down</div>
+	<div id="panel">Hello world!</div><br><br>
+
+	<div id="flipup">Click here to slide the panel up</div>
+	<div id="panelup">Hello world!</div><br><br>
+
+	<div id="flipT">Click here for the panel to toggle</div>
+	<div id="panelT">Hello world!</div>
+</div>
+	<script> 
+		$(document).ready(function(){
+		  $('#flip').click(function(){
+		  	$('#panel').slideDown();
+		  });
+		  $('#flipup').click(function(){
+		  	$('#panelup').slideUp();
+		  });
+		  $('#flipT').click(function(){
+		  	$('#panelT').slideToggle();
+		  });
+		});
+	</script>
+
+</body>
+</html>

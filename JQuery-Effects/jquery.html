@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+	<p>Jquery testing</p>
+	<p>
+		Testing....
+		Wait till testing is completed.
+	</p>
+	<p id='p1'>
+		Enter this paragraph
+	</p>
+	<p id = 'p2'>
+		This is hover example.
+	</p>
+	<button>
+		Click here to complete testing
+	</button><br><br>
+
+	<form id="form">
+		Enter name:
+		<input type="text" name=""><br><br>
+		Enter password:
+		<input type="password" name=""><br><br>
+		Enter Email:
+		<input type="email" name=""><br><br>
+		<input type="button" name="submit" value="Login">
+		<input type="button" name="submit" value="Sign-up">
+
+	</form>
+	<p id= "p3">
+		Don't waste time
+	</p>
+
+	<script>
+			$(document).ready(function(){
+		    	$("button").click(function(){
+		    		$("p").hide();
+		   		});
+			});
+
+			$(document).ready(function () {
+				$("input").hover(function(){
+						$(this).css("background-color", "#cccccc")
+					},
+					function(){
+						$(this).css("background-color", '#ffffff')
+					}
+				);
+			});
+
+			// $(document).ready(function(){
+  	// 			$("#p1").mouseenter(function(){
+   //  				alert("You entered p1!");
+	  // 			});
+			// });
+
+			// $(document).ready(function(){
+			// 	$("#p1").mouseleave(function(){
+  	// 				alert("Bye! You now leave p1!");
+			// 	});
+			// })
+
+			// $("#p2").hover(function(){
+  	// 				alert("You entered p1!");
+			// 	},
+			// 	function(){
+  	// 				alert("Bye! You now leave p1!");
+			// 	}
+			// );
+
+			$("#p3").on({
+				mouseenter: function(){
+					$(this).css("background-color", "lightgray");
+				},
+				mouseleave: function(){
+					$(this).css("background-color", "lightblue");
+				},
+				click: function(){
+					$(this).css("background-color", "yellow");
+				}
+			});
+
+	</script>
+</body>
+</html>

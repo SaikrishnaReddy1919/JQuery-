@@ -1,0 +1,52 @@
+.body{
+	margin:auto;
+		width: 500px;
+	border: solid blue;
+	padding: 10px;
+	/*display: flex;*/
+	align-items: center;
+	justify-content: center;
+}
+h1{
+	font-family: sans-serif;
+	font-size: 20px;
+	color: blue;
+	text-align: center;
+}
+
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  /*Sets display to none*/
+  display: none;
+}
+
+#panelup, #flipup {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#panelup {
+  padding: 50px;
+}
+
+#panelT, #flipT {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#panelT {
+  padding: 50px;
+  /*Sets display to none*/
+  display: none;
+}

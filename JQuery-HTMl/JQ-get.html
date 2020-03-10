@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="JQ-get.css">
+</head>
+<body>
+
+	<div class="body">
+		<h1>JQuery - Get</h1>
+		<p id="test">This is some <b>bold</b> text in a paragraph.</p>
+
+		<button id="btn1">Show Text</button>
+		<button id="btn2">Show HTML</button>
+
+		<p>
+			<input type="text" id='val' name=""><br><br>
+			<button id='btn3'>Show value</button><br><br>
+			<a href="www.google.com" id = 'w3'> Google</a><br><br>
+			<button id='btn4'>Show attribute</button>
+
+		</p>
+	</div>
+
+	<script>
+		$(document).ready(function(){
+		  $("#btn1").click(function(){
+		    alert("Text: " + $("#test").text());
+		  });
+		  $("#btn2").click(function(){
+		    alert("HTML: " + $("#test").html());
+		  });
+		  $('#btn3').click(function(){
+		  	alert("Value:" + $("#val").val());
+		  });
+		  $('#btn4').click(function(){
+		  	alert("Attribute: " + $('#w3').attr('href'))
+		  })
+		});
+	</script>
+
+</body>
+</html>
