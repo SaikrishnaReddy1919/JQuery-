@@ -1,0 +1,39 @@
+
+
+#body{
+    margin:auto;
+    width: 500px;
+    border: solid blue;
+    padding: 10px;
+    /*display: flex;*/
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+	background-color:rgb(89, 89, 182);
+    padding :10px;
+    font-size: large;
+	border: none;
+    color: white;
+    width: 50px;
+
+}
+button:hover{
+	background-color: white;
+	color: black;
+	border: blue 1px solid;
+	cursor: pointer;
+}
+.dropdown{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    background-color: seagreen;
+    font-size: large;
+    color: white;
+}
+#title{
+    color: rgb(211, 17, 17);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
